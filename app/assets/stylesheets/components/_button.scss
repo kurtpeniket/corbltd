@@ -16,12 +16,25 @@
     color: white;
     padding: 8px 24px;
     border-radius: 4px;
-    background: $corb-green;
+    background: $corb-blue;
     transition: background 0.3s ease;
   }
   
   .btn-flat:hover {
+    background: #125283;
+    color: white;
+  }
+
+  .btn-green {
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
     background: $corb-green;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-green:hover {
+    background: #4b832d;
     color: white;
   }
   
