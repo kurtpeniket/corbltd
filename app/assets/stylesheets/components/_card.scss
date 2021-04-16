@@ -27,12 +27,20 @@
     // padding: 20px;
 }
 
+.single-card .fa-check-circle {
+  color: $corb-orange;
+}
+
 .more-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 24px;
     margin: 5% 15% 5% 15%;
   }
+
+.icon {
+  color: $corb-blue;
+}
 
 .cards {
     display: grid;
@@ -72,6 +80,15 @@
   .card-product .card-product-infos {
     padding: 16px;
   }  
+
+  .about {
+    background-color: $dark-blue;
+    color: white;
+  }
+
+  .services {
+    color: $corb-blue;
+  }
 
   // Smallest device
   @media (min-width: 100px) and (max-width: 575px) {
