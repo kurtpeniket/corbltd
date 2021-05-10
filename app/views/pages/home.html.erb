@@ -46,30 +46,65 @@
     <div class="container my-3 text-center">
         <div id='about' class="single-card">
         <h4 class="card-header blue-heading ">About us</h4>
-            <p class="p-3">We are Electrical, Mechanical and Fire contractors based in Shropshire with national coverage.</p>
-            <p>Specialising in the commercial industry, we work with clients in multiple sectors including retail, leisure and hospitality, for all their maintainance and project needs.</p>
-            <p>We are a family run business, with a diverse and dynamic team of professionals who value honesty and reliability at their core.</p>
+            <img src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' style='width: 100%; height: 190px'>
+            <div class='p-3'>
+                <p class="p-3">We are Electrical, Mechanical and Fire contractors based in Shropshire with national coverage.</p>
+                <p>Specialising in the commercial industry, we work with clients in multiple sectors including retail, leisure and hospitality, for all their maintainance and project needs.</p>
+                <p>We are a family run business, with a diverse and dynamic team of professionals who value honesty and reliability at their core.</p>
+            </div>
         </div>
     </div>
     <div class="container my-3 text-center">
         <div class="single-card">
             <h4 class='card-header blue-heading'>Get in touch...</h4>
-            <p>Office Tel: 01384 416902</p>
-            <p>General Enquiries  <a href='mailto:info@corbltd.co.uk'><i class="fas fa-envelope-square"></i>info@corbltd.co.uk</a></p>
-            <p>Work Orders / New instructions <a href='mailto:workorders@corbltd.co.uk'><i class="fas fa-envelope-square"></i>workorders@corbltd.co.uk</a></p>
-            <p>Account Queries/Invoices <a href='mailto:accounts@corbltd.co.uk'><i class="fas fa-envelope-square"></i>accounts@corbltd.co.uk</a></p>
-            <p>Address: 9 Pearson Road, Central Park, Telford, Shropshire, TF2 9TX</p>
-            <div id='map' style='width: 400px; height: 300px;'></div>
-            <script>
-                mapboxgl.accessToken = 'pk.eyJ1Ijoia3VydHBlbmlrZXQiLCJhIjoiY2trc2dtNGlyMG5saDJ3cGM3NWFrZXE3aiJ9.XyFqbHPX0k_34WuzNFHbcQ';
-                var map = new mapboxgl.Map({
-                    container: 'map',
-                    style: 'mapbox://styles/mapbox/streets-v11',
-                    center: [-2.4445027575902127, 52.68783900572231],
-                    zoom: 15
-                });
-                map.addControl(new mapboxgl.NavigationControl());
-            </script>
+            <div class='p-3'>
+                <p>Office Tel: 01384 416902</p>
+                <p>General Enquiries <a href='mailto:info@corbltd.co.uk'><i class="fas fa-envelope-square"></i>info@corbltd.co.uk</a></p>
+                <p>Work Orders <a href='mailto:workorders@corbltd.co.uk'><i class="fas fa-envelope-square"></i>workorders@corbltd.co.uk</a></p>
+                <p>Account Queries/Invoices <a href='mailto:accounts@corbltd.co.uk'><i class="fas fa-envelope-square"></i>accounts@corbltd.co.uk</a></p>
+            </div>
+            <div class="">
+                <div class="single-card">
+                    <div id='map' style='width: 100%; height: 300px;'></div>
+                        <script>
+                        mapboxgl.accessToken = 'pk.eyJ1Ijoia3VydHBlbmlrZXQiLCJhIjoiY2trc2dtNGlyMG5saDJ3cGM3NWFrZXE3aiJ9.XyFqbHPX0k_34WuzNFHbcQ';
+                        var map = new mapboxgl.Map({
+                            container: 'map',
+                            center: [-2.444, 52.687],
+                            zoom: 15,
+                            style: 'mapbox://styles/mapbox/streets-v11'
+                        });
+
+                        var marker = new mapboxgl.Marker({
+                            color: "#1b75bc",
+                            draggable: true
+                        }).setLngLat([-2.444, 52.687])
+                        .addTo(map);
+
+                        var nav = new mapboxgl.NavigationControl();
+                        map.addControl(nav, 'top-right');
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="text-center blue-heading">Sectors</h1>
+    <hr/>
+    <div class="cards">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1453614512568-c4024d13c247?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80)">
+            Retail & Leisure
+        </div>
+
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)">
+            Commercial Offices
+        </div>
+
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1335&q=80)">
+            Education & Healthcare
         </div>
     </div>
 </div>
@@ -96,45 +131,9 @@
     </div>
 </div>
 
-<div class="container my-5">
-    <h1 class="text-center blue-heading">Sectors</h1>
-    <hr/>
-    <div class="cards">
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1453614512568-c4024d13c247?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80)">
-            Retail & Leisure
-        </div>
-
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)">
-            Commercial Offices
-        </div>
-
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1335&q=80)">
-            Education & Healthcare
-        </div>
-    </div>
-</div>
-
-<div class="more-cards">
-    <div class="single-card">
-        <h4 class="card-header">Maintainence Services</h4>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="far fa-check-circle fa-lg"></i>&nbsp 24/7 helpdesk for reactive and emergency calls</li>
-            <li class="list-group-item"><i class="far fa-check-circle fa-lg"></i>&nbsp Planned maintenance: HVAC, fixed wire tests, emergency lighting, fire alarms, extingushers</li>
-            <li class="list-group-item"><i class="far fa-check-circle fa-lg"></i>&nbsp Specialist services: Fire suppression, structured cabling, legionella</li>
-        </ul>
-        <div class="text-center my-3">
-            <%= link_to "More Info", facilities_path, class: "btn btn-lg btn-green" %>
-        </div>
-    </div>
-    <div class="single-card">
-        <h4 class="card-header">Project Services</h4>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="far fa-check-circle fa-lg"></i>&nbsp In house design</li>
-            <li class="list-group-item"><i class="far fa-check-circle fa-lg"></i>&nbsp Sectors: design and build, new build, education, healthcare, warehouse</li>
-            <li class="list-group-item"><i class="far fa-check-circle fa-lg"></i>&nbsp Specialist: Food processing facilities, manufacturing, automotive, renewables</li>
-        </ul>
-        <div class="text-center my-3">
-            <%= link_to "More Info", projects_path, class: "btn btn-lg btn-green" %>
-        </div>
+<div class='container text-center'>
+    <div class='d-flex justify-content-around'>
+        <%= link_to "Project Services", projects_path, class: "btn btn-lg btn-green" %>
+        <%= link_to "Facilities Management", facilities_path, class: "btn btn-lg btn-green" %>
     </div>
 </div>
