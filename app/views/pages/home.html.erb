@@ -65,9 +65,10 @@
             </div>
             <div class="">
                 <div class="single-card">
-                    <div id='map' style='width: 100%; height: 300px;'></div>
+                    <div id='map' style='width: 100%; height: 300px;' data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
                         <script>
-                        mapboxgl.accessToken = '';
+                        let mapElement = document.getElementById('map');
+                        mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
                         var map = new mapboxgl.Map({
                             container: 'map',
                             center: [-2.444, 52.687],
