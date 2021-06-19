@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'facilities', to: 'pages#facilities'
   get 'blog', to: 'pages#blog'
   get 'contact', to: 'pages#contact'
+  get 'commitments', to: 'pages#commitments'
 
   resources :contacts, only: [:new, :create]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

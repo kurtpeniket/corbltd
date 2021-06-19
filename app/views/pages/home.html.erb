@@ -12,6 +12,10 @@
             <h1>Corb Limited are commited to making you happy, whatever the cost!</h1>
             <p>Some more paragraph text here...</p>
             <%= link_to "Contact us", about_path, class: "btn btn-flat" %>
+            <div class="banner-links">
+              <a href="https://www.facebook.com/corblimited/"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/corb-ltd/"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
         </div>
         <div class="carousel-item">
@@ -20,6 +24,10 @@
             <h1>We have a wealth of experience in many areas</h1>
             <p>Some paragraph text here...</p>
             <%= link_to "Contact us", about_path, class: "btn btn-flat" %>
+            <div class="banner-links">
+              <a href="https://www.facebook.com/corblimited/"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/corb-ltd/"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
         </div>
         <div class="carousel-item">
@@ -28,6 +36,10 @@
             <h1>Contact us today to find out more</h1>
             <p>Some paragraph text here...</p>
             <%= link_to "Contact us", about_path, class: "btn btn-flat" %>
+            <div class="banner-links">
+              <a href="https://www.facebook.com/corblimited/"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/corb-ltd/"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
         </div>
     </div>
@@ -134,7 +146,9 @@
 
 <div class='container text-center'>
     <div class='d-flex justify-content-around'>
-        <%= link_to "Project Services", projects_path, class: "btn btn-lg btn-green" %>
+      <div class='col-sm-12 col-lg-6'>
+        <%= link_to "Project Services", projects_path, class: "btn btn-lg btn-green m-3" %>
         <%= link_to "Facilities Management", facilities_path, class: "btn btn-lg btn-green" %>
+      </div>
     </div>
 </div>
